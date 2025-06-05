@@ -1,0 +1,35 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    color: #007acc;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Resultado visual (si lo usas en JS más adelante) */
+#resultado {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #222;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
