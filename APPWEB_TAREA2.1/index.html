@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Perfil</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="navbar">
@@ -17,12 +17,57 @@
   </header>
 
   <main class="container">
+    <!-- Perfil -->
     <section class="profile-card">
-    <div class="banner"></div>
+      <div class="banner"></div>
       <div class="profile-info">
-        <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNYZd7i92NYcCTLrloUICB8TKs6Kxr_u7e826a4XmxjpX-_YHX7TUFDtx3QEeE54YWoi785oxTocCElG7RTGiTYSbCvOvGHQuXhLO03sCoWiGs=w1585-h773" alt="Avatar" class="avatar">
         <h2>Jane Doe</h2>
         <p class="location">Bergen, Noruega</p>
         <p class="role">Desarrolladora Frontend</p>
         <p>Conocimientos en HTML, CSS, JavaScript</p>
-        <a href="#" class="edit-profile">⚙️ Ed
+        <a href="#" class="edit-profile">⚙️ Editar perfil</a>
+      </div>
+    </section>
+
+    <!-- Panel derecho -->
+    <aside class="side-panels">
+      <!-- Solicitudes -->
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Solicitudes de conexión</h3>
+          <a href="#">Ver todas</a>
+        </div>
+        <div class="request">
+          <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNYZd7i92NYcCTLrloUICB8TKs6Kxr_u7e826a4XmxjpX-_YHX7TUFDtx3QEeE54YWoi785oxTocCElG7RTGiTYSbCvOvGHQuXhLO03sCoWiGs=w1585-h773" class="mini-avatar">
+          <span>Steve Jobs</span>
+          <button class="accept">✔️</button>
+          <button class="reject">❌</button>
+        </div>
+        <div class="request">
+          <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNYZd7i92NYcCTLrloUICB8TKs6Kxr_u7e826a4XmxjpX-_YHX7TUFDtx3QEeE54YWoi785oxTocCElG7RTGiTYSbCvOvGHQuXhLO03sCoWiGs=w1585-h773" class="mini-avatar">
+          <span>Bill Gates</span>
+          <button class="accept">✔️</button>
+          <button class="reject">❌</button>
+        </div>
+      </div>
+
+      <!-- Conexiones -->
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Tus conexiones</h3>
+          <a href="#">Ver todas</a>
+        </div>
+        <ul class="connections">
+          <li><img src="https://via.placeholder.com/30/cccccc/ffffff?text=👤" class="mini-avatar"> Richard Stallman</li>
+          <li><img src="https://via.placeholder.com/30/cccccc/ffffff?text=👤" class="mini-avatar"> Linus Torvalds</li>
+          <li><img src="https://via.placeholder.com/30/cccccc/ffffff?text=👤" class="mini-avatar"> Ada Lovelace</li>
+          <li><img src="https://via.placeholder.com/30/cccccc/ffffff?text=👤" class="mini-avatar"> Grace Hopper</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
