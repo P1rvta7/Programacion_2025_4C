@@ -17,45 +17,76 @@ grid-auto-rows: 150px;
 gap: 10px;
 }
 
-.grid-item {
+.item {
 background-color: #aaa;
 border-radius: 4px;
 }
 
-/* Tamaños de cada item */
-.item1 {
+/* Parte 1 */
+.a {
 grid-column: span 2;
 grid-row: span 2;
 }
 
-.item2 {
+.b {
+grid-column: span 1;
+grid-row: span 1;
+}
+
+.c {
+grid-column: span 1;
+grid-row: span 1;
+}
+
+.d {
 grid-column: span 2;
 grid-row: span 1;
 }
 
-.item3 {
-grid-column: span 1;
-grid-row: span 1;
-}
-
-.item4 {
-grid-column: span 1;
-grid-row: span 1;
-}
-
-.item5 {
+.e {
 grid-column: span 1;
 grid-row: span 2;
 }
 
-.item6 {
+.f {
 grid-column: span 2;
 grid-row: span 1;
 }
 
-.item7 {
+.g {
 grid-column: span 2;
 grid-row: span 1;
+}
+
+/* Parte 2 */
+.h {
+grid-column: span 2;
+grid-row: span 2;
+}
+
+.i {
+grid-column: span 2;
+grid-row: span 1;
+}
+
+.j {
+grid-column: span 1;
+grid-row: span 1;
+}
+
+.k {
+grid-column: span 1;
+grid-row: span 1;
+}
+
+.l {
+grid-column: span 1;
+grid-row: span 3;
+}
+
+.m {
+grid-column: span 2;
+grid-row: span 2;
 }
 
 /* Responsivo */
