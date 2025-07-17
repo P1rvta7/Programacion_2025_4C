@@ -1,0 +1,169 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: 'Segoe UI', sans-serif;
+background-color: #f9f9f9;
+color: #333;
+padding: 20px;
+}
+
+header {
+text-align: center;
+margin-bottom: 30px;
+}
+
+header h1 {
+color: #2c3e50;
+font-size: 2.2rem;
+margin-bottom: 10px;
+}
+
+/* Categorías */
+.categorias {
+margin-bottom: 30px;
+text-align: center;
+}
+
+.categoria-lista {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 15px;
+margin-top: 10px;
+}
+
+.categoria {
+background-color: #3498db;
+color: white;
+padding: 10px 20px;
+border-radius: 20px;
+font-size: 0.95rem;
+}
+
+/* Galería y fotos */
+.galeria {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.foto {
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 15px;
+width: 300px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+text-align: center;
+transition: transform 0.3s ease;
+}
+
+.foto:hover {
+transform: translateY(-5px);
+}
+
+.foto img {
+width: 100%;
+border-radius: 8px;
+}
+
+.foto h3 {
+margin: 10px 0 5px;
+color: #3498db;
+}
+
+.precio {
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+button {
+background-color: #3498db;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.2s ease;
+}
+
+button:hover {
+background-color: #2980b9;
+}
+
+/* Ofertas */
+.ofertas {
+margin-top: 40px;
+}
+
+/* Opiniones */
+.opiniones {
+margin-top: 40px;
+text-align: center;
+}
+
+.comentarios {
+margin-top: 15px;
+}
+
+blockquote {
+font-style: italic;
+background-color: #ecf0f1;
+padding: 15px;
+border-left: 5px solid #3498db;
+margin: 10px auto;
+max-width: 600px;
+border-radius: 8px;
+}
+
+cite {
+display: block;
+margin-top: 8px;
+font-style: normal;
+color: #555;
+}
+
+/* Contacto */
+.contacto {
+margin-top: 50px;
+text-align: center;
+}
+
+.contacto form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+max-width: 400px;
+margin: 0 auto;
+}
+
+.contacto input,
+.contacto textarea {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 6px;
+}
+
+.contacto button {
+background-color: #2ecc71;
+border: none;
+color: white;
+padding: 10px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.contacto button:hover {
+background-color: #27ae60;
+}
+
+footer {
+margin-top: 60px;
+text-align: center;
+color: #777;
+}
