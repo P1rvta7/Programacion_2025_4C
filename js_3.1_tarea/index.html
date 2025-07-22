@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Likes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Barra del navegador -->
+<div class="nav-bar">
+    <button>&larr;</button>
+    <button>&rarr;</button>
+    <button class="close">X</button>
+    <button class="home">🏠</button>
+    <input type="text" readonly value="/users/username/Documents/likes-project/index.html">
+    <button class="search">🔍</button>
+</div>
+
+<!-- Contenido principal -->
+<div class="main">
+    <!-- Tarjeta de usuario -->
+    <div class="card">
+        <div class="card-header">
+        <span class="username">Some User</span>
+        <span id="like-count">3 like(s)</span>
+        <button id="like-button">Like</button>
+        </div>
+        <p>This is some filler text, it can say anything we like</p>
+    </div>
+
+    <!-- Nota adhesiva -->
+    <div class="note">
+        <p>Each time we click the "Like" button it should increase the number of likes by "1"</p>
+    </div>
+</div>
+
+<script src="scrip.js"></script>
+</body>
+</html>

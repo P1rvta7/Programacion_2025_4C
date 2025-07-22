@@ -1,0 +1,84 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: white;
+}
+
+/* Simula barra superior del navegador */
+.nav-bar {
+background: #ccc;
+padding: 10px;
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.nav-bar input {
+flex-grow: 1;
+padding: 5px;
+border: none;
+background-color: white;
+}
+
+.nav-bar button {
+background: none;
+border: none;
+font-size: 16px;
+cursor: pointer;
+}
+
+.nav-bar .close {
+color: red;
+font-weight: bold;
+}
+
+/* Contenedor principal */
+.main {
+display: flex;
+align-items: flex-start;
+gap: 30px;
+padding: 30px;
+}
+
+/* Tarjeta de usuario */
+.card {
+border: 2px solid black;
+padding: 15px;
+width: 350px;
+}
+
+.card-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+}
+
+#like-button {
+background-color: #fce570;
+border: 2px solid black;
+padding: 5px 12px;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* Nota adhesiva */
+.note {
+background-color: #ffe066;
+border: 1px solid #e0b800;
+padding: 10px;
+width: 250px;
+position: relative;
+font-size: 14px;
+}
+
+.note::before {
+content: '';
+position: absolute;
+top: -10px;
+left: 40%;
+width: 30px;
+height: 10px;
+background: red;
+transform: rotate(-5deg);
+}
