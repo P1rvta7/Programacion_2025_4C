@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Likes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="browser-bar">
+    <span class="controls">
+        <button class="btn back"></button>
+        <button class="btn forward"></button>
+        <button class="btn close"></button>
+        <button class="btn home"></button>
+    </span>
+    <input type="text" value="/users/username/Documents/likes-project/index.html" readonly />
+    <div class="search-icon"></div>
+</div>
+
+<h1>Network</h1>
+
+<main class="main-container">
+    <!-- Perfil lateral -->
+    <aside class="profile-card">
+        <div class="avatar">👤</div>
+        <a href="#">Add an avatar</a>
+        <p>James Doe</p>
+    </aside>
+
+    <!-- Feed de publicaciones -->
+    <section class="feed">
+        <h2>Your Feed</h2>
+
+        <div class="post">
+        <strong>Neil M</strong>
+        <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+        <p><span class="likes">9</span> like(s) <button class="like-btn">Like</button></p>
+        </div>
+
+        <div class="post">
+        <strong>Nichole K</strong>
+        <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+        <p><span class="likes">12</span> like(s) <button class="like-btn">Like</button></p>
+        </div>
+
+        <div class="post">
+        <strong>Jim R</strong>
+        <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+        <p><span class="likes">9</span> like(s) <button class="like-btn">Like</button></p>
+        </div>
+    </section>
+
+    <!-- Nota tipo post-it -->
+    <div class="note">
+        <p>📌 Clicking each like button will increase the number of likes for each post by 1</p>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
