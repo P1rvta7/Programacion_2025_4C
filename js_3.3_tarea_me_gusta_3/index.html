@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividad DOM - Formularios</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Actividad: Manipulación del DOM con Formularios</h1>
+
+<!-- ================== EJERCICIO 1 ================== -->
+<section>
+    <h2>Ejercicio 1: Registro de Estudiante</h2>
+    <form id="formEstudiante">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" minlength="2" required>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="14" max="100" required>
+
+    <label for="curso">Curso:</label>
+    <select id="curso" name="curso" required>
+        <option value="">Seleccione</option>
+        <option value="3° Medio">3° Medio</option>
+        <option value="4° Medio">4° Medio</option>
+    </select>
+
+    <fieldset>
+        <legend>Jornada:</legend>
+        <label><input type="radio" name="jornada" value="Mañana" required> Mañana</label>
+        <label><input type="radio" name="jornada" value="Tarde" required> Tarde</label>
+    </fieldset>
+
+    <label>
+        <input type="checkbox" id="aceptaReglamento" required>
+        Acepto el reglamento
+    </label>
+
+    <button type="submit">Registrar</button>
+    <button type="reset" id="limpiarEstudiante">Limpiar</button>
+    </form>
+    <p class="error" id="errorEstudiante" aria-live="polite"></p>
+    <p class="resultado" id="resultadoEstudiante" aria-live="polite"></p>
+</section>
+
+<!-- ================== EJERCICIO 2 ================== -->
+<section>
+    <h2>Ejercicio 2: Calculadora de Promedio de Notas</h2>
+    <form id="formNotas">
+    <label for="nota">Agregar nota (1.0 - 7.0):</label>
+    <input type="number" id="nota" name="nota" step="0.1" min="1" max="7">
+    <button type="button" id="agregarNota">Agregar Nota</button>
+    <button type="button" id="calcularPromedio">Calcular Promedio</button>
+    <button type="button" id="limpiarNotas">Limpiar</button>
+    </form>
+    <p class="error" id="errorNotas" aria-live="polite"></p>
+    <p class="resultado" id="resultadoNotas" aria-live="polite"></p>
+</section>
+
+<!-- ================== EJERCICIO 3 ================== -->
+<section>
+    <h2>Ejercicio 3: Calculadora Básica</h2>
+    <form id="formCalculadora">
+    <label for="num1">Número 1:</label>
+    <input type="number" id="num1" required>
+
+    <label for="num2">Número 2:</label>
+    <input type="number" id="num2" required>
+
+    <label for="operacion">Operación:</label>
+    <select id="operacion" required>
+        <option value="">Seleccione</option>
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multiplicacion">Multiplicación</option>
+        <option value="division">División</option>
+    </select>
+
+    <button type="submit">Calcular</button>
+    <button type="reset" id="limpiarCalc">Limpiar</button>
+    </form>
+    <p class="error" id="errorCalc" aria-live="polite"></p>
+    <p class="resultado" id="resultadoCalc" aria-live="polite"></p>
+</section>
+
+<!-- ================== EJERCICIO 4 ================== -->
+<section>
+    <h2>Ejercicio 4: Lista de Tareas</h2>
+    <form id="formTareas">
+    <label for="tarea">Nueva tarea:</label>
+    <input type="text" id="tarea" required minlength="2">
+    <button type="submit">Agregar</button>
+    <button type="button" id="limpiarTareas">Limpiar Lista</button>
+    </form>
+    <p class="error" id="errorTareas" aria-live="polite"></p>
+    <ul id="listaTareas"></ul>
+</section>
+
+<!-- ================== EJERCICIO 5 ================== -->
+<section>
+    <h2>Ejercicio 5: Encuestador de Preferencias</h2>
+    <form id="formEncuesta">
+    <fieldset>
+        <legend>¿Qué lenguaje prefieres?</legend>
+        <label><input type="checkbox" name="lenguaje" value="JavaScript"> JavaScript</label>
+        <label><input type="checkbox" name="lenguaje" value="Python"> Python</label>
+        <label><input type="checkbox" name="lenguaje" value="Java"> Java</label>
+        <label><input type="checkbox" name="lenguaje" value="C++"> C++</label>
+    </fieldset>
+    <button type="submit">Votar</button>
+    <button type="reset" id="limpiarEncuesta">Limpiar</button>
+    </form>
+    <p class="error" id="errorEncuesta" aria-live="polite"></p>
+    <p class="resultado" id="resultadoEncuesta" aria-live="polite"></p>
+</section>
+
+<script src="style.js"></script>
+</body>
+</html>
