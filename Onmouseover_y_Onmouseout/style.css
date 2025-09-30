@@ -1,0 +1,146 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background-color: white;
+color: black;
+}
+
+.browser-bar {
+background: #ccc;
+padding: 5px;
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.browser-bar input[type="text"] {
+flex-grow: 1;
+}
+
+header {
+background: black;
+color: white;
+padding: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.logo {
+font-size: 24px;
+color: white;
+font-weight: bold;
+}
+
+.search-bar {
+flex-grow: 1;
+padding: 5px;
+}
+
+.login-button {
+background-color: purple;
+color: white;
+border: none;
+padding: 5px 10px;
+}
+
+main {
+display: flex;
+padding: 20px;
+}
+
+.video-player {
+flex: 3;
+}
+
+.video-box {
+background-color: #eee;
+height: 250px;
+border: 1px solid #ccc;
+position: relative;
+}
+
+.video-controls {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 5px;
+border-top: 1px solid #ccc;
+}
+
+.progress-bar {
+flex-grow: 1;
+height: 5px;
+background: #ccc;
+margin: 0 10px;
+}
+
+.control-icons {
+font-size: 16px;
+}
+
+.play-button {
+font-size: 16px;
+}
+
+.video-info {
+color: gray;
+font-size: 14px;
+}
+
+.channel-info {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-top: 10px;
+}
+
+.avatar {
+font-size: 24px;
+}
+
+.username {
+color: purple;
+text-decoration: none;
+}
+
+.subscribe-button {
+background: purple;
+color: white;
+border: none;
+padding: 5px 10px;
+margin-left: auto;
+}
+
+.up-next {
+flex: 1;
+margin-left: 20px;
+}
+
+.up-next ul {
+list-style: none;
+padding: 0;
+}
+
+.up-next li {
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+}
+
+.thumb {
+width: 40px;
+height: 40px;
+border: 2px solid purple;
+color: purple;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 10px;
+font-size: 18px;
+}
