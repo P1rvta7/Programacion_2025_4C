@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DojoWeather</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<!-- Barra superior gris (simula navegador) -->
+<div class="browser-bar top-bar">
+    <div class="controls">
+        <button class="btn">&larr;</button>
+        <button class="btn">&rarr;</button>
+        <button class="btn close">✕</button>
+        <input type="text" value="C:\\Users\\Username\\Documents\\weather\\index.html" readonly>
+        <button class="btn search">🔍</button>
+    </div>
+</div>
+
+<!-- Encabezado principal -->
+<div class="nav">
+    <h1>DojoWeather</h1>
+    <ul>
+        <li><a href="#" onclick="cityAlert('Burbank')">Burbank</a></li>
+        <li><a href="#" onclick="cityAlert('Chicago')">Chicago</a></li>
+        <li><a href="#" onclick="cityAlert('Dallas')">Dallas</a></li>
+    </ul>
+</div>
+
+<div class="main">
+    <h2>San Jose</h2>
+    <div class="temp-select">
+        show temperature in 
+        <select id="tempSelect" onchange="convertTemps(this)">
+            <option value="C">°C</option>
+            <option value="F">°F</option>
+        </select>
+    </div>
+
+    <!-- Barra de pronósticos blanca con sombra -->
+    <div class="forecast-bar">
+        <div class="forecast-day highlight-day">
+            <h3>Today</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="rain">
+            <p>24° / 18°</p>
+        </div>
+        <div class="forecast-day highlight-day">
+            <h3>Tomorrow</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="sunny">
+            <p>27° / 19°</p>
+        </div>
+        <div class="forecast-day highlight-day">
+            <h3>Friday</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" alt="clouds">
+            <p>21° / 16°</p>
+        </div>
+        <div class="forecast-day highlight-day">
+            <h3>Saturday</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="sunny">
+            <p>26° / 21°</p>
+        </div>
+    </div>
+</div>
+
+<!-- Aviso de cookies -->
+<div id="cookie" class="cookie">
+    <p><strong>Stop! Cookie time 🍪</strong><br>
+    We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic.</p>
+    <button onclick="acceptCookies()">I Accept</button>
+</div>
+
+<!-- Barra inferior gris -->
+<div class="browser-bar bottom-bar">
+    <div class="status">
+        <p>Weather Forecast</p>
+    </div>
+</div>
+</body>
+</html>

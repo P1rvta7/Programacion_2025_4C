@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* ====== Barras grises ====== */
+.browser-bar {
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 10px; /* bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-bar {
+    margin: 10px 20px 20px 20px;
+}
+
+.bottom-bar {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    border-top: 1px solid #bbb;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border-radius: 8px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* botones más juntos */
+    width: 100%;
+}
+
+.status p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #ccc;
+}
+
+.close {
+    color: red;
+}
+
+input[type="text"] {
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    background-color: white;
+    font-size: 14px;
+    margin: 0 5px; /* separa un poco del botón buscar */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Botón de búsqueda estilo lupa */
+.btn.search {
+    padding: 6px 12px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ====== Navegación ====== */
+.nav {
+    background-color: #5da9e9;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    animation: fadeIn 1.2s ease;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* ====== Contenido principal ====== */
+.main {
+    padding: 20px 40px;
+}
+
+.temp-select {
+    margin-bottom: 20px;
+}
+
+/* ====== Barra de pronósticos blanca con sombra centrada ====== */
+.forecast-bar {
+    display: flex;
+    justify-content: center; /* centra los días */
+    align-items: center;
+    background-color: white; /* barra blanca */
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    margin: 20px auto; /* centra la barra en la página */
+    overflow-x: auto; /* scroll horizontal si hay muchos días */
+    gap: 20px;
+    max-width: 900px; /* ancho máximo opcional */
+}
+
+.forecast-day {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    min-width: 110px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.forecast-day img {
+    width: 70px; /* iconos más grandes */
+    height: 70px;
+    margin-bottom: 8px;
+}
+
+.forecast-day h3 {
+    font-size: 16px;
+    margin: 0 0 6px 0;
+    font-weight: bold;
+}
+
+.forecast-day p {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+}
+
+.forecast-day:hover {
+    transform: translateY(-6px);
+}
+
+/* ====== Destacar días específicos (Today, Tomorrow, Friday, Saturday) ====== */
+.highlight-day {
+    min-width: 130px; /* bloque más ancho */
+    padding: 20px; /* más padding */
+}
+
+.highlight-day img {
+    width: 90px; /* iconos más grandes */
+    height: 90px;
+}
+
+.highlight-day h3 {
+    font-size: 18px; /* título más grande */
+}
+
+.highlight-day p {
+    font-size: 16px; /* temperatura más grande */
+}
+
+/* ====== Cookie ====== */
+.cookie {
+    background-color: #ddd;
+    position: fixed;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideUp 1s ease-in-out;
+}
+
+.cookie button {
+    background-color: #5da9e9;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cookie button:hover {
+    background-color: #3c8ed9;
+}
+
+/* ====== Animaciones ====== */
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
