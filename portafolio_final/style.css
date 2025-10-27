@@ -1,0 +1,116 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+scroll-behavior: smooth;
+font-family: "Poppins", sans-serif;
+}
+
+section {
+padding-top: 80px;
+}
+
+/* ======== HERO ======== */
+.hero {
+height: 100vh;
+background: linear-gradient(to right, #0d6efd, #212529);
+color: white;
+}
+
+/* ======== HOVERS CSS ======== */
+.card:hover {
+transform: scale(1.03);
+transition: transform 0.3s ease;
+}
+
+/* ======== NAVBAR ======== */
+.nav-link.active {
+color: #0d6efd !important;
+}
+
+/* ======== BANNER SUPERIOR ======== */
+.banner-superior {
+background-image: url('../'); /* Fondo opcional */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+height: 220px; /* altura suficiente para la imagen */
+padding-top: 20px;
+color: white;
+font-family: "Poppins", sans-serif;
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Overlay oscuro para que el texto destaque */
+.banner-superior::after {
+content: "";
+position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+background: rgba(0, 0, 0, 0.4);
+z-index: 1;
+}
+
+/* Contenido del banner */
+.contenido-banner {
+position: relative; /* encima del overlay */
+z-index: 2;
+text-align: center;
+}
+
+/* Imagen dentro del banner (CUADRADA) */
+.foto-banner {
+width: 100px;
+height: 100px;
+object-fit: cover;
+border: 3px solid white; /* opcional */
+box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+border-radius: 0; /* bordes cuadrados */
+margin-bottom: 10px; /* espacio entre imagen y texto */
+}
+
+/* Texto sobre el banner */
+.banner-superior h2,
+.banner-superior p {
+margin: 0;
+z-index: 2;
+}
+
+/* RESPONSIVE BANNER */
+@media (max-width: 768px) {
+.banner-superior {
+    height: 180px;
+}
+.foto-banner {
+    width: 70px;
+    height: 70px;
+}
+.banner-superior h2 {
+    font-size: 1.4rem;
+}
+.banner-superior p {
+    font-size: 0.9rem;
+}
+}
+
+/* ======== RESPONSIVE HERO ======== */
+@media (max-width: 768px) {
+.hero h1 {
+    font-size: 1.8rem;
+}
+}
+/* ======== IMÁGENES DE PROYECTOS ======== */
+.card-img-top {
+width: 100%;
+height: 200px; /* altura fija para uniformidad */
+object-fit: cover; /* recorta la imagen sin deformarla */
+border-radius: 0; /* bordes cuadrados */
+box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+transform: scale(1.05);
+}

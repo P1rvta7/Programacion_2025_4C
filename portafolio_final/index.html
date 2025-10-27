@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portafolio Profesional</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="static/css/style.css">
+<script src="static/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <body>
+<!-- ====== BANNER SUPERIOR ====== -->
+<div class="banner-superior d-flex align-items-center justify-content-center text-center">
+<div class="contenido-banner">
+    <!-- Imagen dentro del banner -->
+    <img src="https://www.shutterstock.com/image-photo/space-scene-planets-stars-galaxies-260nw-1154079046.jpg" 
+        alt="Foto Banner" 
+        class="foto-banner img-fluid mb-3">
+    <!-- Texto -->
+    <h2>Bienvenido a mi Portafolio Broders</h2>
+    <p class="lead">Desarrollador Web | Creatividad | Tecnología</p>
+</div>
+</div>
+
+<!-- ====== NAVBAR ====== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+    <a class="navbar-brand" href="#home">Portafolio Oficial</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Educación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<!-- ====== HOGAR ====== -->
+<section id="hogar" class="hero d-flex align-items-center justify-content-center text-center text-light">
+    <div>
+    <h1>¡Hola! Soy <span class="text-primary">Cristofer Vergara</span></h1>
+    <p class="lead">Desarrollador Web | Creativo | Apasionado por la tecnología</p>
+    <a href="#about" class="btn btn-primary mt-3">Conóceme</a>
+    </div>
+</section>
+
+<!-- ====== ACERCA DE MI ====== -->
+<section id="acerca de mi" class="container py-5">
+    <h2 class="text-center mb-4">Sobre mí</h2>
+    <div class="row align-items-center">
+    <div class="col-md-4 text-center">
+        <img src="https://mail.google.com/mail/u/0?ui=2&ik=354865506e&attid=0.1&permmsgid=msg-f:1847140930842458879&th=19a25ce3d8f2faff&view=fimg&fur=ip&permmsgid=msg-f:1847140930842458879&sz=s0-l75-ft&attbid=ANGjdJ90Sr3Yv2d1SRLruP1f6lJlu1FW8TM4fN7GnytjOimY_ZWSyXUooQpB2scVyQ3SyHeLhGTgNDLZrWl_ffKLiGKcAFLMIUzlnSyEI-FJzf24ZyS-Xw_vnrLxCJk&disp=emb&realattid=ii_19a25cde79f3971e8b21&zw" class="rounded-circle img-fluid shadow" alt="Foto del autor">
+    </div>
+    <div class="col-md-8">
+        <p>Soy un estudiante normal, que eligio la programación para conocer nuevos orisontes, aprender algo nuevo y a la vez algo dificil, algo unico y algo bonito que esta carrera entrega.</p>
+    </div>
+    </div>
+</section>
+
+<!-- ====== SERVICIOS ====== -->
+<section id="servicios" class="bg-light py-5">
+    <div class="container">
+    <h2 class="text-center mb-4">Servicios</h2>
+    <div class="row">
+        <div class="col-md-4 text-center" onmouseover="resaltar(this)" onmouseout="restaurar(this)">
+        <div class="card p-3 shadow">
+            <h4>Diseño Web</h4>
+            <p>Interfaces modernas y adaptables con HTML, CSS y Bootstrap.</p>
+        </div>
+        </div>
+        <div class="col-md-4 text-center" onmouseover="resaltar(this)" onmouseout="restaurar(this)">
+        <div class="card p-3 shadow">
+            <h4>Desarrollo Frontend</h4>
+            <p>Interactividad dinámica con JavaScript y buenas prácticas.</p>
+        </div>
+        </div>
+        <div class="col-md-4 text-center" onmouseover="resaltar(this)" onmouseout="restaurar(this)">
+        <div class="card p-3 shadow">
+            <h4>Optimización</h4>
+            <p>SEO, tiempos de carga y experiencia de usuario optimizada.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- ====== MIS HABILIDADES ====== -->
+<section id="mis habilidades" class="container py-5">
+    <h2 class="text-center mb-4">Habilidades</h2>
+    <div class="row">
+    <div class="col-md-6">
+        <p>HTML</p><div class="progress"><div class="progress-bar" style="width:90%;">50%</div></div>
+        <p>CSS</p><div class="progress"><div class="progress-bar" style="width:85%;">70%</div></div>
+        <p>JavaScript</p><div class="progress"><div class="progress-bar" style="width:80%;">40%</div></div>
+    </div>
+    <div class="col-md-6">
+        <p>Trabajo en equipo</p><div class="progress"><div class="progress-bar" style="width:95%;">80%</div></div>
+        <p>Comunicación</p><div class="progress"><div class="progress-bar" style="width:90%;">100%</div></div>
+    </div>
+    </div>
+</section>
+
+<!-- ====== EDUCACIÓN ====== -->
+<section id="educación" class="bg-light py-5">
+    <div class="container">
+    <h2 class="text-center mb-4">Educación</h2>
+    <ul>
+        <li><strong>Colegio Técnico Profesional:</strong>Vate Vicente Huidobro - Especialidad en programación (2022 - 2024)</li>
+        <li><strong>Bootcamp Frontend:</strong> Desarrollo web moderno (2025)</li>
+    </ul>
+    </div>
+</section>
+
+<!-- ====== PROYECTOS MIOS ====== -->
+<section id="proyectos" class="container py-5">
+<h2 class="text-center mb-4">Proyectos</h2>
+<div class="row">
+    <!-- Proyecto 1 -->
+    <div class="col-md-4" onclick="abrirProyecto(this)" data-url="https://github.com/P1rvta7/Programacion_2025_4C">
+        <div class="card shadow-sm mb-4">
+        <img src="img/Captura 1 5.PNG" class="card-img-top" alt="Proyecto 1">
+        <div class="card-body">
+            <h5 class="card-title">Proyecto 1</h5>
+            <p class="card-text">Aplicación web interactiva con JS y API.</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="col-md-4" onclick="abrirProyecto(this)" data-url="https://github.com/P1rvta7/Programacion_2025_4C">
+        <div class="card shadow-sm mb-4">
+        <img src="static/img/proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+        <div class="card-body">
+            <h5 class="card-title">Proyecto 2</h5>
+            <p class="card-text">Diseño web responsivo con Bootstrap.</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Proyecto 3 (Nueva imagen) -->
+    <div class="col-md-4" onclick="abrirProyecto(this)" data-url="https://github.com/P1rvta7/ProyectoImagen">
+        <div class="card shadow-sm mb-4">
+        <img src="static/img/mi_nueva_imagen.jpg" class="card-img-top" alt="Proyecto 3">
+        <div class="card-body">
+            <h5 class="card-title">Proyecto 3</h5>
+            <p class="card-text">Este proyecto incluye una imagen personalizada para mostrar en la tarjeta.</p>
+        </div>
+        </div>
+    </div>
+</div>
+</section>
+
+</section>
+
+<!-- ====== CONTACTO ====== -->
+<section id="contacto" class="bg-dark text-light py-5 text-center">
+    <div class="container">
+    <h2>Contacto</h2>
+    <p>¿Quieres trabajar conmigo? Contáctame:</p>
+    <form class="mx-auto" style="max-width: 400px;">
+        <input type="text" class="form-control mb-2" placeholder="Cristofer Vergara" onchange="capturar(this)">
+        <input type="email" class="form-control mb-2" placeholder="cristofervergara@liceovvh.cl" onchange="capturar(this)">
+        <textarea class="form-control mb-2" rows="3" placeholder="Cada error es una pista hacia la solución. No estás fallando, estás depurando tu camino al éxito.onchange="capturar(this)"></textarea>
+        <button type="button" class="btn btn-primary" onclick="enviarFormulario(this)">Enviar</button>
+    </form>
+    </div>
+</section>
+
+<footer class="bg-secondary text-light text-center p-3">
+    © 2025 Cristofer Vergara | Portafolio Web
+</footer>
+</body>
+</html>
